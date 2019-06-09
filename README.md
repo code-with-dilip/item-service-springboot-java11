@@ -16,6 +16,10 @@ This code base has the code to run a spring boot application in a Java 11 enviro
 
 ## Docker
 
+-   There are two files which takes care of the whole docker process.
+    -   Dockerfile
+    -   docker-entrypoint.sh
+
 ### Build the docker image
 
 -   The Docker build options are explained here.  
