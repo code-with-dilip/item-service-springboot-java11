@@ -1,7 +1,7 @@
-#!/bin/bash
-set -e
+#!/bin/sh
 
-if [ "$1" = 'start' ]; then
-    exec env ${java_env}  /nta-local-inject-api/bin/nta-local-inject-api
-fi
-exec "$@"
+    java_opts="-Djava.security.egd=file:/dev/./urandom "
+
+   [ -n "$ENVIRONMENT" ] && java_opts+=" -Dspring.profiles.active=$ENVIRONMENT"
+
+exec java -jar ${java_env} /opt/app.jar
