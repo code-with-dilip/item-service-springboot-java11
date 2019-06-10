@@ -1,4 +1,4 @@
-package com.learnspringboot.domain;
+package com.learnspringboot.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
